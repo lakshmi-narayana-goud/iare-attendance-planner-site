@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://YOUR-DOMAIN.example/</loc></url>
-  <url><loc>https://YOUR-DOMAIN.example/setup.html</loc></url>
-  <url><loc>https://YOUR-DOMAIN.example/desktop.html</loc></url>
-  <url><loc>https://YOUR-DOMAIN.example/mobile.html</loc></url>
-  <url><loc>https://YOUR-DOMAIN.example/guide.html</loc></url>
-  <url><loc>https://YOUR-DOMAIN.example/privacy.html</loc></url>
+  <url><loc>https://lakshmi-narayana-goud.github.io/iare-attendance-planner-site/</loc></url>
+  <url><loc>https://lakshmi-narayana-goud.github.io/iare-attendance-planner-site/setup.html</loc></url>
+  <url><loc>https://lakshmi-narayana-goud.github.io/iare-attendance-planner-site/desktop.html</loc></url>
+  <url><loc>https://lakshmi-narayana-goud.github.io/iare-attendance-planner-site/mobile.html</loc></url>
+  <url><loc>https://lakshmi-narayana-goud.github.io/iare-attendance-planner-site/guide.html</loc></url>
+  <url><loc>https://lakshmi-narayana-goud.github.io/iare-attendance-planner-site/privacy.html</loc></url>
 </urlset>

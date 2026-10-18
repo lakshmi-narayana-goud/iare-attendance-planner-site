@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://YOUR-DOMAIN.example/sitemap.xml
+Sitemap: https://lakshmi-narayana-goud.github.io/iare-attendance-planner-site/sitemap.xml
+
