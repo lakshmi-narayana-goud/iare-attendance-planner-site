@@ -4,51 +4,155 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 
-<meta name="description" content="IARE Attendance Planner — a free browser extension that helps IARE students understand attendance, targets, classes they can bunk, and timetable status.">
+<title>IARE Attendance Planner | IARE Student App & Samvidha Attendance Tool</title>
 
-<title>IARE Attendance Planner — Samvidha Attendance Tool</title>
+<meta
+  name="description"
+  content="IARE Attendance Planner is a free student-built attendance tool for IARE students. Check Samvidha attendance, subject-wise attendance, 75%, 80% and 85% targets, classes you can miss, timetable status and more. Chrome support coming soon."
+>
 
-<link rel="canonical" href="https://lakshmi-narayana-goud.github.io/iare-attendance-planner-site/">
+<meta
+  name="robots"
+  content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+>
 
+<link
+  rel="canonical"
+  href="https://lakshmi-narayana-goud.github.io/iare-attendance-planner-site/"
+>
+
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+
+<!-- Open Graph -->
 <meta property="og:type" content="website">
-<meta property="og:title" content="IARE Attendance Planner — Samvidha Attendance Tool">
-<meta property="og:description" content="Free IARE Samvidha attendance planner for overall attendance, subject-wise attendance, 75% to 85% targets, bunk calculations, timetable and attendance planning.">
-<meta property="og:url" content="https://lakshmi-narayana-goud.github.io/iare-attendance-planner-site/">
 <meta property="og:site_name" content="IARE Attendance Planner">
+<meta
+  property="og:title"
+  content="IARE Attendance Planner | IARE Student Attendance Tool"
+>
+<meta
+  property="og:description"
+  content="Free student-built attendance planning companion for IARE students. Understand Samvidha attendance, subject-wise attendance, attendance targets, classes you can miss and timetable status."
+>
+<meta
+  property="og:url"
+  content="https://lakshmi-narayana-goud.github.io/iare-attendance-planner-site/"
+>
+<meta property="og:locale" content="en_IN">
 
+<!-- Twitter -->
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="IARE Attendance Planner — Samvidha Attendance Tool">
-<meta name="twitter:description" content="Plan IARE attendance with subject-wise insights, target calculations, bunk calculations and timetable information.">
+<meta
+  name="twitter:title"
+  content="IARE Attendance Planner | IARE Student Attendance Tool"
+>
+<meta
+  name="twitter:description"
+  content="A free student-built attendance planning companion for IARE students using Samvidha."
+>
 
+<!-- Software structured data -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
   "name": "IARE Attendance Planner",
+  "alternateName": [
+    "IARE Attendance Calculator",
+    "IARE Attendance Extension",
+    "IARE Student Attendance Planner",
+    "Samvidha Attendance Planner",
+    "IARE Student App Attendance Tool"
+  ],
   "applicationCategory": "EducationalApplication",
   "operatingSystem": "Windows, Android",
-  "description": "A student-built browser extension that helps IARE students understand Samvidha attendance, subject-wise attendance, target percentages, bunk calculations and timetable information.",
+  "description": "A free student-built browser extension that helps IARE students understand Samvidha attendance, subject-wise attendance, attendance targets, classes they can miss and timetable status.",
   "url": "https://lakshmi-narayana-goud.github.io/iare-attendance-planner-site/",
   "isAccessibleForFree": true
 }
 </script>
 
+<!-- Website structured data -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
   "name": "IARE Attendance Planner",
+  "alternateName": [
+    "IARE Attendance Calculator",
+    "IARE Student Attendance Tool",
+    "IARE Student App Attendance Tool",
+    "Samvidha Attendance Planner"
+  ],
   "url": "https://lakshmi-narayana-goud.github.io/iare-attendance-planner-site/"
 }
 </script>
 
-<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="styles.css">
+<!-- FAQ structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is IARE Attendance Planner?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "IARE Attendance Planner is a student-built browser extension that helps IARE students understand attendance information, attendance targets, subject-wise attendance and timetable status available through their Samvidha session."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use IARE Attendance Planner with Samvidha?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. The planner is designed as a companion for students using the IARE Samvidha portal. Students should log in directly on the official Samvidha website."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I calculate my IARE attendance percentage?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The planner helps students understand their attendance percentage and target levels such as 75%, 80% and 85% using attendance information available in their Samvidha session."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I see how many classes I can miss?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The planner provides a can-bunk calculation to estimate how many upcoming valid classes can be missed while remaining above a selected attendance target."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is IARE Attendance Planner the official IARE Student App?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. IARE Attendance Planner is a student-built browser extension and is not an official IARE application, official IARE Student App, MyIARE application or official Samvidha service."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Chrome support available?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Chrome support is currently being updated. The updated Chrome version will be announced on this website when it is ready. Until then, students can use the currently available supported browser versions listed on the installation page."
+      }
+    }
+  ]
+}
+</script>
+
 </head>
 
 <body>
 
 <header class="nav">
+
   <a class="brand" href="#top">
     <span class="brand-mark">IA</span>
     <span>IARE Attendance Planner</span>
@@ -62,14 +166,22 @@
   </nav>
 
   <a class="nav-cta" href="#install">Get Started</a>
+
 </header>
+
 
 <main id="top">
 
+
+<!-- HERO -->
+
 <section class="hero">
+
   <div class="hero-copy">
 
-    <div class="eyebrow">FREE • STUDENT-BUILT • SAMVIDHA COMPANION</div>
+    <div class="eyebrow">
+      FREE • STUDENT-BUILT • SAMVIDHA COMPANION
+    </div>
 
     <h1>
       Know your attendance.<br>
@@ -77,10 +189,12 @@
     </h1>
 
     <p class="lead">
-      A lightweight browser extension for IARE students that turns Samvidha attendance and timetable information into simple, actionable insights.
+      A lightweight browser extension for IARE students that turns Samvidha
+      attendance and timetable information into simple, actionable insights.
     </p>
 
     <div class="hero-actions">
+
       <a class="button primary" href="#install">
         Install the extension <span>→</span>
       </a>
@@ -88,6 +202,7 @@
       <a class="button secondary" href="#features">
         Explore features
       </a>
+
     </div>
 
     <div class="trust-row">
@@ -97,6 +212,7 @@
     </div>
 
   </div>
+
 
   <div class="hero-card">
 
@@ -110,12 +226,14 @@
     <div class="mock-panel">
 
       <div class="mock-top">
+
         <div>
           <small>OVERALL ATTENDANCE</small>
           <strong>82.4%</strong>
         </div>
 
         <div class="ring">82%</div>
+
       </div>
 
       <div class="target">
@@ -155,8 +273,11 @@
     </div>
 
   </div>
+
 </section>
 
+
+<!-- STATS -->
 
 <section class="stats">
 
@@ -183,18 +304,25 @@
 </section>
 
 
+<!-- FEATURES -->
+
 <section id="features" class="section">
 
   <div class="section-head">
-    <div class="eyebrow">WHAT YOU GET</div>
+
+    <div class="eyebrow">
+      WHAT YOU GET
+    </div>
 
     <h2>
       Attendance information, without the guesswork.
     </h2>
 
     <p>
-      The planner is designed around the questions students actually ask before deciding whether they can miss a class.
+      The planner is designed around the questions students actually ask
+      before deciding whether they can miss a class.
     </p>
+
   </div>
 
 
@@ -204,41 +332,51 @@
       <div class="icon">◎</div>
       <h3>Overall attendance</h3>
       <p>
-        See your current overall attendance clearly instead of hunting through Samvidha pages.
+        See your current overall attendance clearly instead of hunting through
+        Samvidha pages.
       </p>
     </article>
+
 
     <article>
       <div class="icon">▦</div>
       <h3>Subject-wise view</h3>
       <p>
-        Break attendance down by subject so you can identify risky subjects early.
+        Break attendance down by subject so you can identify risky subjects
+        early.
       </p>
     </article>
+
 
     <article>
       <div class="icon">75</div>
       <h3>Target ladder</h3>
       <p>
-        Understand the path to 75%, 80%, and 85% with simple attendance calculations.
+        Understand the path to 75%, 80%, and 85% with simple attendance
+        calculations.
       </p>
     </article>
+
 
     <article>
       <div class="icon">↕</div>
       <h3>Can I bunk?</h3>
       <p>
-        Estimate how many upcoming valid classes you can miss while staying above your selected target.
+        Estimate how many upcoming valid classes you can miss while staying
+        above your selected target.
       </p>
     </article>
+
 
     <article>
       <div class="icon">NOW</div>
       <h3>NOW class</h3>
       <p>
-        Use the configured IARE timetable to identify the class currently in progress.
+        Use the configured IARE timetable to identify the class currently
+        in progress.
       </p>
     </article>
+
 
     <article>
       <div class="icon">→</div>
@@ -248,6 +386,7 @@
       </p>
     </article>
 
+
     <article>
       <div class="icon">◷</div>
       <h3>Today's remaining classes</h3>
@@ -256,11 +395,13 @@
       </p>
     </article>
 
+
     <article>
       <div class="icon">⌁</div>
       <h3>Biometric-aware rules</h3>
       <p>
-        Attendance guidance can account for the rules and class structure configured for the IARE workflow.
+        Attendance guidance can account for the rules and class structure
+        configured for the IARE workflow.
       </p>
     </article>
 
@@ -269,26 +410,180 @@
 </section>
 
 
+<!-- SEO / STUDENT GUIDE -->
+
+<section class="section seo-guide">
+
+  <div class="section-head">
+
+    <div class="eyebrow">
+      IARE STUDENT GUIDE
+    </div>
+
+    <h2>
+      IARE attendance, Samvidha and student tools.
+    </h2>
+
+    <p>
+      Looking for an IARE attendance calculator, IARE Student App attendance
+      information, Samvidha attendance help, or a browser-based attendance
+      planner? This project brings useful attendance planning information
+      together in one place.
+    </p>
+
+  </div>
+
+
+  <div class="feature-grid">
+
+    <article>
+
+      <div class="icon">%</div>
+
+      <h3>
+        IARE attendance percentage
+      </h3>
+
+      <p>
+        Use the attendance information available through Samvidha to understand
+        your current attendance percentage and compare it with your target.
+      </p>
+
+    </article>
+
+
+    <article>
+
+      <div class="icon">75</div>
+
+      <h3>
+        75%, 80% and 85% targets
+      </h3>
+
+      <p>
+        Check how your attendance relates to common target levels and understand
+        how many classes may be needed to reach a selected target.
+      </p>
+
+    </article>
+
+
+    <article>
+
+      <div class="icon">▦</div>
+
+      <h3>
+        Subject-wise attendance
+      </h3>
+
+      <p>
+        Review attendance by subject so you can identify subjects that need
+        attention before planning to miss a class.
+      </p>
+
+    </article>
+
+
+    <article>
+
+      <div class="icon">↕</div>
+
+      <h3>
+        Classes you can miss
+      </h3>
+
+      <p>
+        Estimate how many upcoming valid classes you can miss while staying
+        above your selected attendance target.
+      </p>
+
+    </article>
+
+
+    <article>
+
+      <div class="icon">IA</div>
+
+      <h3>
+        IARE Student App searches
+      </h3>
+
+      <p>
+        If you are searching for an IARE student attendance app, student portal
+        attendance tool or MyIARE attendance information, this project provides
+        a browser-based planning companion rather than replacing official
+        IARE services.
+      </p>
+
+    </article>
+
+
+    <article>
+
+      <div class="icon">S</div>
+
+      <h3>
+        Samvidha attendance
+      </h3>
+
+      <p>
+        The planner works alongside your normal Samvidha session. Always log in
+        directly through the official IARE Samvidha portal and never share your
+        password with this site.
+      </p>
+
+    </article>
+
+  </div>
+
+
+  <div class="warning">
+
+    <b>Important:</b>
+
+    IARE Attendance Planner is a student-built project. It is not the official
+    IARE Student App, MyIARE application, or Samvidha service.
+
+  </div>
+
+</section>
+
+
+<!-- INSTALL -->
+
 <section id="install" class="section install-section">
 
   <div class="section-head">
-    <div class="eyebrow">CHOOSE YOUR DEVICE</div>
 
-    <h2>Install in a few steps.</h2>
+    <div class="eyebrow">
+      CHOOSE YOUR DEVICE
+    </div>
+
+    <h2>
+      Install in a few steps.
+    </h2>
 
     <p>
       Pick the path that matches your device. The extension is free.
     </p>
+
   </div>
 
 
   <div class="install-grid">
 
+
+    <!-- EDGE -->
+
     <article class="install-card featured">
 
-      <div class="platform">🖥️ COMPUTER</div>
+      <div class="platform">
+        🖥️ COMPUTER
+      </div>
 
-      <h3>Microsoft Edge</h3>
+      <h3>
+        Microsoft Edge
+      </h3>
 
       <p>
         Recommended for Windows PC and laptop users.
@@ -304,24 +599,90 @@
       </a>
 
       <ol>
-        <li>Open the listing above.</li>
-        <li>Select <b>Get</b> / <b>Get extension</b>.</li>
-        <li>Confirm the browser permission prompt.</li>
-        <li>Open <b>samvidha.iare.ac.in</b> and log in normally.</li>
-        <li>Open the IARE Attendance Planner from the browser extension menu.</li>
+
+        <li>
+          Open the listing above.
+        </li>
+
+        <li>
+          Select <b>Get</b> / <b>Get extension</b>.
+        </li>
+
+        <li>
+          Confirm the browser permission prompt.
+        </li>
+
+        <li>
+          Open <b>samvidha.iare.ac.in</b> and log in normally.
+        </li>
+
+        <li>
+          Open the IARE Attendance Planner from the browser extension menu.
+        </li>
+
       </ol>
 
     </article>
 
 
+    <!-- CHROME -->
+
     <article class="install-card">
 
-      <div class="platform">🦊 COMPUTER</div>
+      <div class="platform">
+        🌐 COMPUTER
+      </div>
 
-      <h3>Firefox Desktop</h3>
+      <h3>
+        Google Chrome
+      </h3>
 
       <p>
-        Use the official Mozilla Add-ons listing when the published listing is available.
+        Chrome support is currently being updated. The updated Chrome version
+        will be announced here when it is ready.
+      </p>
+
+      <div class="note">
+
+        <b>Coming soon:</b>
+        IARE Attendance Planner for Chrome.
+
+      </div>
+
+      <ol>
+
+        <li>
+          The Chrome-compatible version is currently under development.
+        </li>
+
+        <li>
+          Check this website again when the updated version is released.
+        </li>
+
+        <li>
+          Until then, use one of the currently supported browser paths below.
+        </li>
+
+      </ol>
+
+    </article>
+
+
+    <!-- FIREFOX DESKTOP -->
+
+    <article class="install-card">
+
+      <div class="platform">
+        🦊 COMPUTER
+      </div>
+
+      <h3>
+        Firefox Desktop
+      </h3>
+
+      <p>
+        Use the official Mozilla Add-ons listing when the published listing
+        is available.
       </p>
 
       <a
@@ -334,24 +695,47 @@
       </a>
 
       <ol>
-        <li>Open the Mozilla Add-ons page.</li>
-        <li>Search for <b>IARE Attendance Planner</b>.</li>
-        <li>Open the verified listing published for this project.</li>
-        <li>Select <b>Add to Firefox</b>.</li>
-        <li>Open Samvidha and use the extension.</li>
+
+        <li>
+          Open the Mozilla Add-ons page.
+        </li>
+
+        <li>
+          Search for <b>IARE Attendance Planner</b>.
+        </li>
+
+        <li>
+          Open the verified listing published for this project.
+        </li>
+
+        <li>
+          Select <b>Add to Firefox</b>.
+        </li>
+
+        <li>
+          Open Samvidha and use the extension.
+        </li>
+
       </ol>
 
     </article>
 
 
+    <!-- ANDROID -->
+
     <article class="install-card">
 
-      <div class="platform">📱 ANDROID</div>
+      <div class="platform">
+        📱 ANDROID
+      </div>
 
-      <h3>Firefox for Android</h3>
+      <h3>
+        Firefox for Android
+      </h3>
 
       <p>
-        Firefox for Android supports compatible Firefox extensions. Install Firefox first, then use the Mozilla listing.
+        Firefox for Android supports compatible Firefox extensions.
+        Install Firefox first, then use the Mozilla listing.
       </p>
 
       <a
@@ -364,85 +748,160 @@
       </a>
 
       <ol>
-        <li>Install/update <b>Firefox for Android</b>.</li>
-        <li>Open the Mozilla listing above.</li>
-        <li>Add the extension if Firefox offers it as compatible.</li>
-        <li>Open Samvidha in Firefox.</li>
-        <li>Use the browser's extension/add-ons controls to open the planner.</li>
+
+        <li>
+          Install/update <b>Firefox for Android</b>.
+        </li>
+
+        <li>
+          Open the Mozilla listing above.
+        </li>
+
+        <li>
+          Add the extension if Firefox offers it as compatible.
+        </li>
+
+        <li>
+          Open Samvidha in Firefox.
+        </li>
+
+        <li>
+          Use the browser's extension/add-ons controls to open the planner.
+        </li>
+
       </ol>
 
       <div class="note">
-        Mobile extension support can change with Firefox releases. If the add-on does not appear, use the latest Firefox for Android and check the listing again.
+
+        Mobile extension support can change with Firefox releases.
+        If the add-on does not appear, use the latest Firefox for Android
+        and check the listing again.
+
       </div>
 
     </article>
+
 
   </div>
 
 
   <div class="warning">
+
     <b>Important:</b>
-    Never give your Samvidha password to the Attendance Planner website or to another person.
+
+    Never give your Samvidha password to the Attendance Planner website
+    or to another person.
+
     Log in directly on the official Samvidha portal.
+
   </div>
 
 </section>
 
+
+<!-- HOW IT WORKS -->
 
 <section id="how" class="section dark-section">
 
   <div class="section-head">
-    <div class="eyebrow">HOW IT WORKS</div>
-    <h2>Simple flow. No separate dashboard.</h2>
+
+    <div class="eyebrow">
+      HOW IT WORKS
+    </div>
+
+    <h2>
+      Simple flow. No separate dashboard.
+    </h2>
+
   </div>
+
 
   <div class="steps">
 
+
     <div>
+
       <b>01</b>
-      <h3>Install</h3>
-      <p>Add the extension to your supported browser.</p>
-    </div>
 
-    <div>
-      <b>02</b>
-      <h3>Open Samvidha</h3>
+      <h3>
+        Install
+      </h3>
+
       <p>
-        Log in at the official IARE Samvidha portal using your normal credentials.
+        Add the extension to your supported browser.
       </p>
+
     </div>
 
+
     <div>
+
+      <b>02</b>
+
+      <h3>
+        Open Samvidha
+      </h3>
+
+      <p>
+        Log in at the official IARE Samvidha portal using your normal
+        credentials.
+      </p>
+
+    </div>
+
+
+    <div>
+
       <b>03</b>
-      <h3>Open Planner</h3>
+
+      <h3>
+        Open Planner
+      </h3>
+
       <p>
         Launch the extension from the browser's extension/add-ons controls.
       </p>
+
     </div>
 
+
     <div>
+
       <b>04</b>
-      <h3>Plan</h3>
+
+      <h3>
+        Plan
+      </h3>
+
       <p>
         Read attendance, target, bunk, current-class and timetable information.
       </p>
+
     </div>
+
 
   </div>
 
 </section>
 
+
+<!-- TIMETABLE -->
 
 <section class="section timetable">
 
   <div class="section-head">
 
-    <div class="eyebrow">IARE TIMETABLE</div>
+    <div class="eyebrow">
+      IARE TIMETABLE
+    </div>
 
-    <h2>Built around the campus day.</h2>
+    <h2>
+      Built around the campus day.
+    </h2>
 
     <p>
-      The planner uses the configured lecture periods to identify the current and remaining classes.
+      The planner uses the configured lecture periods to identify the current
+      and remaining classes.
     </p>
 
   </div>
@@ -490,15 +949,21 @@
 </section>
 
 
+<!-- PRIVACY -->
+
 <section class="section privacy">
 
   <div class="privacy-box">
 
     <div>
 
-      <div class="eyebrow">PRIVACY FIRST</div>
+      <div class="eyebrow">
+        PRIVACY FIRST
+      </div>
 
-      <h2>Your Samvidha login stays yours.</h2>
+      <h2>
+        Your Samvidha login stays yours.
+      </h2>
 
       <p>
         This site is an information and installation guide.
@@ -522,80 +987,199 @@
 </section>
 
 
+<!-- FAQ -->
+
 <section id="faq" class="section faq">
 
   <div class="section-head">
 
-    <div class="eyebrow">FAQ</div>
+    <div class="eyebrow">
+      FAQ
+    </div>
 
-    <h2>Common questions.</h2>
+    <h2>
+      Common questions.
+    </h2>
 
   </div>
 
 
   <details open>
-    <summary>Is IARE Attendance Planner free?</summary>
+
+    <summary>
+      Is IARE Attendance Planner free?
+    </summary>
+
     <p>
-      Yes. The planner and this documentation site are intended to be free for students.
+      Yes. The planner and this documentation site are intended to be free
+      for students.
     </p>
+
   </details>
 
 
   <details>
-    <summary>Is this an official IARE application?</summary>
+
+    <summary>
+      What is IARE Attendance Planner?
+    </summary>
+
     <p>
-      No. It is a student-built browser extension and is not presented as an official IARE product.
-      Samvidha itself is the IARE campus management portal.
+      IARE Attendance Planner is a student-built browser extension designed
+      to help IARE students understand attendance information, attendance
+      targets, subject-wise attendance and timetable status available through
+      their Samvidha session.
     </p>
+
   </details>
 
 
   <details>
-    <summary>Does it change my attendance?</summary>
+
+    <summary>
+      Is this an official IARE Student App?
+    </summary>
+
     <p>
-      No. The planner is for viewing and calculating attendance-related information.
-      It does not provide a mechanism to edit or fabricate official attendance.
+      No. It is a student-built browser extension and is not presented as
+      the official IARE Student App, MyIARE application, or official Samvidha
+      service. The planner is intended as a companion for students.
     </p>
+
   </details>
 
 
   <details>
-    <summary>Do I need a new account?</summary>
+
+    <summary>
+      Is this an official IARE application?
+    </summary>
+
+    <p>
+      No. It is a student-built browser extension and is not presented as
+      an official IARE product. Samvidha itself is the IARE campus management
+      portal.
+    </p>
+
+  </details>
+
+
+  <details>
+
+    <summary>
+      Can I calculate my IARE attendance percentage?
+    </summary>
+
+    <p>
+      The planner helps students understand attendance percentage and target
+      levels such as 75%, 80% and 85% using the attendance information
+      available through their Samvidha session.
+    </p>
+
+  </details>
+
+
+  <details>
+
+    <summary>
+      Can I see how many classes I can miss?
+    </summary>
+
+    <p>
+      Yes. The planner provides a can-bunk calculation that estimates how
+      many upcoming valid classes can be missed while remaining above your
+      selected attendance target.
+    </p>
+
+  </details>
+
+
+  <details>
+
+    <summary>
+      Does it change my attendance?
+    </summary>
+
+    <p>
+      No. The planner is for viewing and calculating attendance-related
+      information. It does not provide a mechanism to edit or fabricate
+      official attendance.
+    </p>
+
+  </details>
+
+
+  <details>
+
+    <summary>
+      Do I need a new account?
+    </summary>
+
     <p>
       No separate Attendance Planner account is intended.
       Use your normal Samvidha session.
     </p>
+
   </details>
 
 
   <details>
-    <summary>Why is my data not appearing?</summary>
+
+    <summary>
+      Why is my data not appearing?
+    </summary>
+
     <p>
-      First confirm that you are logged into Samvidha,
-      that you are using a supported browser,
-      and that the extension is enabled.
+      First confirm that you are logged into Samvidha, that you are using
+      a supported browser, and that the extension is enabled.
       Refresh the Samvidha page after installation.
     </p>
+
   </details>
 
 
   <details>
-    <summary>Does the phone version work exactly like desktop?</summary>
+
+    <summary>
+      Is Chrome support available?
+    </summary>
+
     <p>
-      The mobile experience depends on Firefox for Android's current extension support
-      and the extension's mobile UI.
-      Keep Firefox updated and use the mobile-specific instructions above.
+      Chrome support is currently being updated. The updated Chrome version
+      will be announced on this website when it is ready. Until then, use
+      one of the currently supported browser paths listed above.
     </p>
+
   </details>
+
+
+  <details>
+
+    <summary>
+      Does the phone version work exactly like desktop?
+    </summary>
+
+    <p>
+      The mobile experience depends on Firefox for Android's current extension
+      support and the extension's mobile UI. Keep Firefox updated and use the
+      mobile-specific instructions above.
+    </p>
+
+  </details>
+
 
 </section>
 
+
+<!-- FINAL CTA -->
 
 <section class="final-cta">
 
   <div>
 
-    <div class="eyebrow">READY?</div>
+    <div class="eyebrow">
+      READY?
+    </div>
 
     <h2>
       Install it. Open Samvidha. Take control of your attendance.
@@ -609,8 +1193,11 @@
 
 </section>
 
+
 </main>
 
+
+<!-- FOOTER -->
 
 <footer>
 
