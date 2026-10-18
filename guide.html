@@ -3,48 +3,1253 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>IARE Samvidha Attendance Planner — Attendance, Targets and Bunk Calculator</title>
-<meta name="description" content="Learn how the IARE Attendance Planner presents Samvidha attendance, subject-wise attendance, 75–80–85% targets, classes you can bunk and timetable status.">
-<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
-<link rel="canonical" href="https://lakshmi-narayana-goud.github.io/iare-attendance-planner-site/guide.html">
+
+<meta
+  name="description"
+  content="IARE attendance calculator and guide for IARE students. Understand Samvidha attendance percentage, subject-wise attendance, 75%, 80% and 85% targets, classes to attend, classes you can miss and attendance planning."
+>
+
+<meta
+  name="robots"
+  content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+>
+
+<title>IARE Attendance Calculator & Percentage Guide | Samvidha</title>
+
+<link
+  rel="canonical"
+  href="https://lakshmi-narayana-goud.github.io/iare-attendance-planner-site/guide.html"
+>
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="IARE Attendance Planner">
+<meta
+  property="og:title"
+  content="IARE Attendance Calculator & Percentage Guide | Samvidha"
+>
+<meta
+  property="og:description"
+  content="Learn how IARE attendance percentage, 75%, 80% and 85% targets, classes to attend, classes you can miss and subject-wise Samvidha attendance planning work."
+>
+<meta
+  property="og:url"
+  content="https://lakshmi-narayana-goud.github.io/iare-attendance-planner-site/guide.html"
+>
+<meta property="og:locale" content="en_IN">
+
+<meta name="twitter:card" content="summary">
+<meta
+  name="twitter:title"
+  content="IARE Attendance Calculator & Percentage Guide"
+>
+<meta
+  name="twitter:description"
+  content="A practical guide to IARE attendance percentage, Samvidha attendance, target calculations and classes you can attend or miss."
+>
+
+<!-- WebSite structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "IARE Attendance Planner",
+  "url": "https://lakshmi-narayana-goud.github.io/iare-attendance-planner-site/"
+}
+</script>
+
+<!-- Article structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "IARE Attendance Calculator and Percentage Guide",
+  "description": "A practical guide for IARE students to understand attendance percentage, Samvidha attendance, subject-wise attendance, target percentages and attendance planning.",
+  "url": "https://lakshmi-narayana-goud.github.io/iare-attendance-planner-site/guide.html",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://lakshmi-narayana-goud.github.io/iare-attendance-planner-site/guide.html"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "IARE Attendance Planner"
+  }
+}
+</script>
+
+<!-- FAQ structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I calculate IARE attendance percentage?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Attendance percentage is calculated as attended classes divided by total conducted or held classes, multiplied by 100. The IARE Attendance Planner is designed to help students understand the attendance information available through their Samvidha session."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is an IARE attendance calculator?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "An IARE attendance calculator is a tool that helps students understand their attendance percentage and plan attendance targets using attendance information such as classes attended and classes held."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I check subject-wise IARE attendance?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Subject-wise attendance can be reviewed using the attendance information available through a student's Samvidha session and the supported planner experience."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How many classes can I miss and stay above my target?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The number of classes that can be missed depends on your current attendance, classes already held and your selected target. The planner provides a can-bunk calculation to estimate this value."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How many classes do I need to attend to reach 75%, 80% or 85%?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The required number of classes depends on your current attended and held classes. The target can be calculated by finding the smallest number of future classes that makes attended classes divided by total classes reach the selected percentage."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is IARE Attendance Planner the official IARE Student App or MyIARE?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. IARE Attendance Planner is a student-built project and is not the official IARE Student App, MyIARE application or official Samvidha service."
+      }
+    }
+  ]
+}
+</script>
+
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-<meta property="og:type" content="website">
-<meta property="og:title" content="IARE Samvidha Attendance Planner — Attendance, Targets and Bunk Calculator">
-<meta property="og:description" content="Learn how the IARE Attendance Planner presents Samvidha attendance, subject-wise attendance, 75–80–85% targets, classes you can bunk and timetable status.">
-<meta property="og:url" content="https://lakshmi-narayana-goud.github.io/iare-attendance-planner-site/guide.html">
 <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+
 <header class="nav">
-  <a class="brand" href="index.html"><span class="brand-mark">IA</span><span>IARE Attendance Planner</span></a>
-  <nav><a href="index.html#features">Features</a><a href="setup.html">Install</a><a href="guide.html">Attendance</a><a href="privacy.html">Privacy</a></nav>
-  <a class="nav-cta" href="setup.html">Get Started</a>
+
+  <a class="brand" href="index.html">
+    <span class="brand-mark">IA</span>
+    <span>IARE Attendance Planner</span>
+  </a>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="#calculator">Calculator</a>
+    <a href="#targets">Targets</a>
+    <a href="#faq">FAQ</a>
+  </nav>
+
+  <a class="nav-cta" href="index.html#install">
+    Get Started
+  </a>
+
 </header>
-<main>
-<section class="section article">
-  <div class="breadcrumb"><a href="index.html">IARE Attendance Planner</a> / ATTENDANCE GUIDE</div>
-  <div class="eyebrow">ATTENDANCE GUIDE</div>
-  <h1>IARE Samvidha attendance planning explained</h1>
-  <p class="lead">The planner is built around common IARE student questions: What is my attendance? Which subject is risky? How many classes can I miss? What do I need to reach 80% or 85%? What class is happening now?</p>
-  
-<h2>Overall attendance</h2>
-<p>The overall attendance view gives a quick picture of attendance status without requiring you to manually interpret multiple figures.</p>
-<h2>Subject-wise attendance</h2>
-<p>Subject-level information helps identify subjects where missing another class could have a larger effect. Use the subject view before making attendance decisions.</p>
-<h2>75% → 80% → 85% target ladder</h2>
-<p>The target ladder shows attendance against common thresholds. Instead of only showing a single percentage, the planner helps you understand the distance to each target.</p>
-<h2>Can I bunk?</h2>
-<p>The planner can calculate how many valid future classes can potentially be missed while staying above a selected target. Treat this as a planning calculation, not a guarantee: timetable changes, attendance corrections and institutional rules can affect the final result.</p>
-<h2>NOW and next class</h2>
-<p>The planner uses the configured IARE timetable periods to identify the current class, remaining periods for the day and the next timetable day.</p>
-<div class="callout"><strong>Important</strong>The Attendance Planner does not give students a way to edit or fabricate official attendance. It is intended to help students understand and plan around information available through their normal Samvidha session.</div>
+
+
+<main id="top">
+
+<!-- HERO -->
+
+<section class="hero">
+
+  <div class="hero-copy">
+
+    <div class="eyebrow">
+      IARE ATTENDANCE GUIDE
+    </div>
+
+    <h1>
+      IARE Attendance Calculator.<br>
+      <span>Understand your percentage.</span>
+    </h1>
+
+    <p class="lead">
+      A practical guide for IARE students who want to understand
+      Samvidha attendance, attendance percentage, subject-wise attendance,
+      target percentages and how many classes they may need to attend or can miss.
+    </p>
+
+    <div class="hero-actions">
+
+      <a class="button primary" href="index.html#install">
+        Get the planner <span>→</span>
+      </a>
+
+      <a class="button secondary" href="#calculator">
+        Learn the calculation
+      </a>
+
+    </div>
+
+    <div class="trust-row">
+      <span>✓ Student-built</span>
+      <span>✓ Free to use</span>
+      <span>✓ Samvidha companion</span>
+    </div>
+
+  </div>
+
+
+  <div class="hero-card">
+
+    <div class="browser-bar">
+      <span></span>
+      <span></span>
+      <span></span>
+      <b>IARE Attendance Calculator</b>
+    </div>
+
+    <div class="mock-panel">
+
+      <div class="mock-top">
+
+        <div>
+          <small>ATTENDANCE</small>
+          <strong>82.4%</strong>
+        </div>
+
+        <div class="ring">
+          82%
+        </div>
+
+      </div>
+
+      <div class="target">
+        <span>75%</span>
+        <span>80%</span>
+        <span class="active">85%</span>
+      </div>
+
+      <div class="progress">
+        <i></i>
+      </div>
+
+      <div class="mock-grid">
+
+        <div>
+          <small>ATTENDED</small>
+          <b>82</b>
+        </div>
+
+        <div>
+          <small>HELD</small>
+          <b>100</b>
+        </div>
+
+        <div>
+          <small>CAN MISS</small>
+          <b>2 classes</b>
+        </div>
+
+        <div>
+          <small>REQUIRED</small>
+          <b>1 class</b>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
 
 </section>
+
+
+<!-- QUICK NAV -->
+
+<section class="stats">
+
+  <div>
+    <strong>75%</strong>
+    <span>Target</span>
+  </div>
+
+  <div>
+    <strong>80%</strong>
+    <span>Target</span>
+  </div>
+
+  <div>
+    <strong>85%</strong>
+    <span>Target</span>
+  </div>
+
+  <div>
+    <strong>Subject-wise</strong>
+    <span>Attendance</span>
+  </div>
+
+</section>
+
+
+<!-- CALCULATOR -->
+
+<section id="calculator" class="section">
+
+  <div class="section-head">
+
+    <div class="eyebrow">
+      IARE ATTENDANCE CALCULATOR
+    </div>
+
+    <h2>
+      How to calculate attendance percentage
+    </h2>
+
+    <p>
+      The basic attendance percentage calculation is simple:
+      divide the number of classes attended by the total number of
+      classes held or conducted, then multiply by 100.
+    </p>
+
+  </div>
+
+
+  <div class="feature-grid">
+
+    <article>
+
+      <div class="icon">%</div>
+
+      <h3>
+        Attendance percentage
+      </h3>
+
+      <p>
+        <b>Attendance % = (Classes Attended ÷ Classes Held) × 100</b>
+      </p>
+
+      <p>
+        For example, if a student attended 82 classes out of
+        100 held classes, the attendance percentage is 82%.
+      </p>
+
+    </article>
+
+
+    <article>
+
+      <div class="icon">+</div>
+
+      <h3>
+        Classes needed to improve
+      </h3>
+
+      <p>
+        If your attendance is below a selected target, you need
+        to attend additional classes without missing them until
+        the attendance percentage reaches the target.
+      </p>
+
+    </article>
+
+
+    <article>
+
+      <div class="icon">−</div>
+
+      <h3>
+        Classes you can miss
+      </h3>
+
+      <p>
+        The maximum number of future classes you can miss depends
+        on your current attended classes, total held classes and
+        the target percentage you want to maintain.
+      </p>
+
+    </article>
+
+
+    <article>
+
+      <div class="icon">▦</div>
+
+      <h3>
+        Subject-wise attendance
+      </h3>
+
+      <p>
+        Overall attendance can hide differences between subjects.
+        Checking each subject separately helps identify subjects
+        where attendance needs more attention.
+      </p>
+
+    </article>
+
+  </div>
+
+</section>
+
+
+<!-- FORMULA -->
+
+<section class="section dark-section">
+
+  <div class="section-head">
+
+    <div class="eyebrow">
+      SIMPLE FORMULA
+    </div>
+
+    <h2>
+      Understand the numbers behind your attendance.
+    </h2>
+
+    <p>
+      Suppose your attendance record shows <b>A</b> attended classes
+      and <b>C</b> total classes held.
+    </p>
+
+  </div>
+
+
+  <div class="steps">
+
+    <div>
+      <b>01</b>
+      <h3>Find attended classes</h3>
+      <p>
+        Identify the number of classes you attended.
+      </p>
+    </div>
+
+    <div>
+      <b>02</b>
+      <h3>Find total classes</h3>
+      <p>
+        Identify the total number of classes held or conducted.
+      </p>
+    </div>
+
+    <div>
+      <b>03</b>
+      <h3>Divide</h3>
+      <p>
+        Divide attended classes by total classes.
+      </p>
+    </div>
+
+    <div>
+      <b>04</b>
+      <h3>Multiply by 100</h3>
+      <p>
+        The result is your attendance percentage.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- TARGETS -->
+
+<section id="targets" class="section">
+
+  <div class="section-head">
+
+    <div class="eyebrow">
+      ATTENDANCE TARGETS
+    </div>
+
+    <h2>
+      75%, 80% and 85% attendance targets
+    </h2>
+
+    <p>
+      Students may want to compare their current attendance with
+      different target levels. The planner uses target calculations
+      to make this easier to understand.
+    </p>
+
+  </div>
+
+
+  <div class="feature-grid">
+
+    <article>
+
+      <div class="icon">75</div>
+
+      <h3>
+        75% attendance
+      </h3>
+
+      <p>
+        Use 75% as a target when you want to understand how close
+        your current attendance is to that percentage.
+      </p>
+
+      <p>
+        The number of additional classes required or classes that
+        can be missed depends on your current attendance record.
+      </p>
+
+    </article>
+
+
+    <article>
+
+      <div class="icon">80</div>
+
+      <h3>
+        80% attendance
+      </h3>
+
+      <p>
+        An 80% target provides a higher attendance buffer than
+        a 75% target. Your exact required or missable classes
+        depend on your current numbers.
+      </p>
+
+    </article>
+
+
+    <article>
+
+      <div class="icon">85</div>
+
+      <h3>
+        85% attendance
+      </h3>
+
+      <p>
+        An 85% target gives students a stricter attendance goal.
+        It can be useful when planning future attendance and
+        avoiding unnecessary absences.
+      </p>
+
+    </article>
+
+  </div>
+
+</section>
+
+
+<!-- REQUIRED CLASSES -->
+
+<section class="section">
+
+  <div class="section-head">
+
+    <div class="eyebrow">
+      CLASSES TO ATTEND
+    </div>
+
+    <h2>
+      How many classes do I need to attend?
+    </h2>
+
+    <p>
+      If your current attendance is below your target, you can
+      calculate the smallest number of future classes that must
+      be attended continuously to reach that target.
+    </p>
+
+  </div>
+
+
+  <div class="feature-grid">
+
+    <article>
+
+      <div class="icon">A</div>
+
+      <h3>
+        Current attended classes
+      </h3>
+
+      <p>
+        Start with the number of classes you have attended.
+      </p>
+
+    </article>
+
+
+    <article>
+
+      <div class="icon">C</div>
+
+      <h3>
+        Current total classes
+      </h3>
+
+      <p>
+        Use the total number of classes already held.
+      </p>
+
+    </article>
+
+
+    <article>
+
+      <div class="icon">T</div>
+
+      <h3>
+        Select your target
+      </h3>
+
+      <p>
+        Choose 75%, 80%, 85% or another target that you want
+        to analyse.
+      </p>
+
+    </article>
+
+
+    <article>
+
+      <div class="icon">✓</div>
+
+      <h3>
+        Attend future classes
+      </h3>
+
+      <p>
+        The required number is the smallest future class count
+        that makes your attendance reach the selected target.
+      </p>
+
+    </article>
+
+  </div>
+
+</section>
+
+
+<!-- CAN MISS -->
+
+<section class="section dark-section">
+
+  <div class="section-head">
+
+    <div class="eyebrow">
+      CLASSES YOU CAN MISS
+    </div>
+
+    <h2>
+      How many classes can I miss?
+    </h2>
+
+    <p>
+      This is one of the most useful attendance-planning questions.
+      The answer changes depending on your current attendance and
+      the target you want to maintain.
+    </p>
+
+  </div>
+
+
+  <div class="steps">
+
+    <div>
+      <b>01</b>
+      <h3>Check current attendance</h3>
+      <p>
+        Start with your current attended and total classes.
+      </p>
+    </div>
+
+    <div>
+      <b>02</b>
+      <h3>Choose a target</h3>
+      <p>
+        Decide whether you want to maintain 75%, 80%, 85% or
+        another target.
+      </p>
+    </div>
+
+    <div>
+      <b>03</b>
+      <h3>Test future absences</h3>
+      <p>
+        Each missed future class increases the total class count
+        without increasing attended classes.
+      </p>
+    </div>
+
+    <div>
+      <b>04</b>
+      <h3>Stop before crossing the target</h3>
+      <p>
+        The maximum missable number is the largest number of
+        future missed classes that keeps attendance at or above
+        the selected target.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- SAMVIDHA -->
+
+<section class="section">
+
+  <div class="section-head">
+
+    <div class="eyebrow">
+      IARE SAMVIDHA ATTENDANCE
+    </div>
+
+    <h2>
+      Using Samvidha attendance information
+    </h2>
+
+    <p>
+      IARE students can use their normal Samvidha session to view
+      attendance information. The Attendance Planner is designed
+      as a companion that helps make that information easier to
+      understand and use for attendance planning.
+    </p>
+
+  </div>
+
+
+  <div class="feature-grid">
+
+    <article>
+
+      <div class="icon">01</div>
+
+      <h3>
+        Log in normally
+      </h3>
+
+      <p>
+        Open the official IARE Samvidha portal and authenticate
+        using your normal credentials.
+      </p>
+
+    </article>
+
+
+    <article>
+
+      <div class="icon">02</div>
+
+      <h3>
+        View attendance
+      </h3>
+
+      <p>
+        Use the attendance information available in your Samvidha
+        session.
+      </p>
+
+    </article>
+
+
+    <article>
+
+      <div class="icon">03</div>
+
+      <h3>
+        Understand targets
+      </h3>
+
+      <p>
+        Compare current attendance with target levels and
+        understand the effect of future attendance.
+      </p>
+
+    </article>
+
+
+    <article>
+
+      <div class="icon">04</div>
+
+      <h3>
+        Plan classes
+      </h3>
+
+      <p>
+        Use the planner's attendance and timetable information
+        to make more informed decisions about upcoming classes.
+      </p>
+
+    </article>
+
+  </div>
+
+
+  <div class="warning">
+
+    <b>Privacy:</b>
+    Never enter your Samvidha password into this website.
+    Log in directly on the official Samvidha portal.
+
+  </div>
+
+</section>
+
+
+<!-- STUDENT APP SEARCH INTENT -->
+
+<section class="section">
+
+  <div class="section-head">
+
+    <div class="eyebrow">
+      IARE STUDENT TOOLS
+    </div>
+
+    <h2>
+      Searching for the IARE Student App or MyIARE?
+    </h2>
+
+    <p>
+      Students may search for terms such as IARE Student App,
+      IARE Student Application, MyIARE, IARE student portal,
+      IARE attendance app or Samvidha attendance when looking
+      for student services.
+    </p>
+
+  </div>
+
+
+  <div class="feature-grid">
+
+    <article>
+
+      <h3>
+        IARE Student App
+      </h3>
+
+      <p>
+        If you are looking for an official IARE student application,
+        use the official IARE channels for the authoritative service.
+        This project is a separate student-built attendance planner.
+      </p>
+
+    </article>
+
+
+    <article>
+
+      <h3>
+        MyIARE
+      </h3>
+
+      <p>
+        MyIARE-related searches may refer to official IARE student
+        services. IARE Attendance Planner should not be confused
+        with the official MyIARE application.
+      </p>
+
+    </article>
+
+
+    <article>
+
+      <h3>
+        Samvidha attendance
+      </h3>
+
+      <p>
+        This planner is designed to work alongside a student's
+        normal Samvidha session and help interpret attendance-related
+        information.
+      </p>
+
+    </article>
+
+
+    <article>
+
+      <h3>
+        IARE attendance planner
+      </h3>
+
+      <p>
+        This project focuses specifically on attendance planning,
+        subject-wise attendance, target calculations and timetable
+        information for IARE students.
+      </p>
+
+    </article>
+
+  </div>
+
+</section>
+
+
+<!-- TIMETABLE -->
+
+<section class="section timetable">
+
+  <div class="section-head">
+
+    <div class="eyebrow">
+      IARE TIMETABLE
+    </div>
+
+    <h2>
+      Attendance planning also depends on your timetable.
+    </h2>
+
+    <p>
+      The planner uses the configured IARE lecture periods to help
+      identify the current class and remaining classes.
+    </p>
+
+  </div>
+
+
+  <div class="time-grid">
+
+    <div>
+      <b>09:30–10:25</b>
+      <span>Period 1</span>
+    </div>
+
+    <div>
+      <b>10:25–11:20</b>
+      <span>Period 2</span>
+    </div>
+
+    <div>
+      <b>11:20–12:15</b>
+      <span>Period 3</span>
+    </div>
+
+    <div class="lunch">
+      <b>12:15–01:05</b>
+      <span>Lunch</span>
+    </div>
+
+    <div>
+      <b>01:05–02:00</b>
+      <span>Period 4</span>
+    </div>
+
+    <div>
+      <b>02:00–02:55</b>
+      <span>Period 5</span>
+    </div>
+
+    <div>
+      <b>02:55–03:50</b>
+      <span>Period 6</span>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- NOT OFFICIAL -->
+
+<section class="section privacy">
+
+  <div class="privacy-box">
+
+    <div>
+
+      <div class="eyebrow">
+        IMPORTANT
+      </div>
+
+      <h2>
+        Student-built, not official.
+      </h2>
+
+      <p>
+        IARE Attendance Planner is a student-built browser extension
+        and documentation website. It is not the official IARE Student
+        App, MyIARE application or official Samvidha service.
+      </p>
+
+    </div>
+
+    <a
+      class="button secondary"
+      href="https://samvidha.iare.ac.in/"
+      target="_blank"
+      rel="noopener"
+    >
+      Open official Samvidha ↗
+    </a>
+
+  </div>
+
+</section>
+
+
+<!-- FAQ -->
+
+<section id="faq" class="section faq">
+
+  <div class="section-head">
+
+    <div class="eyebrow">
+      FAQ
+    </div>
+
+    <h2>
+      IARE attendance questions
+    </h2>
+
+  </div>
+
+
+  <details open>
+
+    <summary>
+      How do I calculate IARE attendance percentage?
+    </summary>
+
+    <p>
+      Attendance percentage is calculated as:
+      classes attended divided by total classes held,
+      multiplied by 100.
+    </p>
+
+  </details>
+
+
+  <details>
+
+    <summary>
+      What is an IARE attendance calculator?
+    </summary>
+
+    <p>
+      An IARE attendance calculator helps students understand
+      their current attendance percentage and estimate future
+      attendance requirements or possible absences based on
+      a selected target.
+    </p>
+
+  </details>
+
+
+  <details>
+
+    <summary>
+      Can I check subject-wise attendance?
+    </summary>
+
+    <p>
+      Yes. Subject-wise attendance is useful because overall
+      attendance can hide individual subjects where attendance
+      is lower or higher.
+    </p>
+
+  </details>
+
+
+  <details>
+
+    <summary>
+      How many classes do I need to attend to reach 75%?
+    </summary>
+
+    <p>
+      The answer depends on your current attended and total
+      classes. The required number is the smallest number of
+      future attended classes that makes the attendance percentage
+      reach 75%.
+    </p>
+
+  </details>
+
+
+  <details>
+
+    <summary>
+      How many classes do I need to attend to reach 80%?
+    </summary>
+
+    <p>
+      It depends on your current attendance record. The planner
+      can help you understand how many additional attended classes
+      are required to reach the selected target.
+    </p>
+
+  </details>
+
+
+  <details>
+
+    <summary>
+      How many classes do I need to attend to reach 85%?
+    </summary>
+
+    <p>
+      The required number depends on your current attended and
+      total classes. The higher the target, the more future
+      attendance may be required.
+    </p>
+
+  </details>
+
+
+  <details>
+
+    <summary>
+      How many classes can I miss?
+    </summary>
+
+    <p>
+      The maximum number of classes you can miss depends on your
+      current attendance and the target you want to maintain.
+      The planner provides a can-bunk calculation for this purpose.
+    </p>
+
+  </details>
+
+
+  <details>
+
+    <summary>
+      Is this the official IARE Student App?
+    </summary>
+
+    <p>
+      No. IARE Attendance Planner is a student-built project.
+      It is not the official IARE Student App, MyIARE application
+      or official Samvidha service.
+    </p>
+
+  </details>
+
+
+  <details>
+
+    <summary>
+      Do I need to give my Samvidha password to the planner?
+    </summary>
+
+    <p>
+      No. Never give your Samvidha password to this website or
+      another person. Authenticate directly through the official
+      Samvidha portal.
+    </p>
+
+  </details>
+
+
+  <details>
+
+    <summary>
+      Does the planner change official attendance?
+    </summary>
+
+    <p>
+      No. The planner is intended to help students view and
+      understand attendance-related information. It does not
+      provide a mechanism to edit or fabricate official attendance.
+    </p>
+
+  </details>
+
+</section>
+
+
+<!-- FINAL CTA -->
+
+<section class="final-cta">
+
+  <div>
+
+    <div class="eyebrow">
+      IARE ATTENDANCE PLANNER
+    </div>
+
+    <h2>
+      Understand your attendance before planning your next class.
+    </h2>
+
+  </div>
+
+  <a
+    class="button primary"
+    href="index.html#install"
+  >
+    Choose my browser →
+  </a>
+
+</section>
+
 </main>
+
+
 <footer>
-  <div><div class="brand"><span class="brand-mark">IA</span><span>IARE Attendance Planner</span></div><p>Free student-built attendance planning companion.</p></div>
-  <div class="footer-links"><a href="index.html">Home</a><a href="setup.html">Install</a><a href="guide.html">Attendance</a><a href="desktop.html">Edge</a><a href="mobile.html">Android</a><a href="privacy.html">Privacy</a></div>
-  <small>© 2026 IARE Attendance Planner • Not an official IARE website.</small>
+
+  <div>
+
+    <div class="brand">
+      <span class="brand-mark">IA</span>
+      <span>IARE Attendance Planner</span>
+    </div>
+
+    <p>
+      Free student-built attendance planning companion.
+    </p>
+
+  </div>
+
+
+  <div class="footer-links">
+
+    <a href="index.html">
+      Home
+    </a>
+
+    <a href="setup.html">
+      Setup
+    </a>
+
+    <a href="mobile.html">
+      Mobile
+    </a>
+
+    <a
+      href="https://samvidha.iare.ac.in/"
+      target="_blank"
+      rel="noopener"
+    >
+      Official Samvidha
+    </a>
+
+    <a
+      href="https://microsoftedge.microsoft.com/addons/detail/okibjmapijbcdlapgineeeleeklnceoh"
+      target="_blank"
+      rel="noopener"
+    >
+      Edge extension
+    </a>
+
+  </div>
+
+
+  <small>
+    © 2026 IARE Attendance Planner • Not an official IARE website.
+  </small>
+
 </footer>
+
+
+<script src="script.js"></script>
+
 </body>
 </html>
